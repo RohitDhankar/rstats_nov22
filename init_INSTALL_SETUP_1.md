@@ -2,6 +2,58 @@
 
 ####  mmm_gitup
 
+- TEST -- runApp("App-1", display.mode = "showcase")
+- TEST --OK -- library(shiny); runApp('rstats_nov22/app_dir_1/app_1_demo.R' , display.mode = "showcase")
+- TEST --OK -- library(shiny); runApp('rstats_nov22/app_dir_2/testApp_Shiny_.R' , display.mode = "showcase")
+
+- 
+
+<h1 align="center">SHINY Experiments - </h1>
+
+<p align="center">
+    <img src="https://github.com/" width= "850px">
+</p>
+
+
+
+#
+<br>
+
+
+##### Seen below some R Code and RStudio terminal Prints 
+
+> So the SHINY Tutorial states - 
+Launch your app by running runApp("App-1"). Then click escape and make some changes to your app
+
+- Source -- https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/
+
+
+
+#
+<br>
+
+- Note the First Command Works Ok -- the App is launched -- 
+- > library(shiny); runApp('rstats_nov22/app_dir_1/app_1_demo.R')
+
+#
+<br>
+
+
+```bash
+> library(shiny); runApp('rstats_nov22/app_dir_1/app_1_demo.R')
+
+Listening on http://127.0.0.1:5212
+
+> library(shiny); runApp('rstats_nov22/app_dir_1)
++ 
+> library(shiny); runApp("rstats_nov22/app_dir_1")
+Error in `shinyAppDir()`:
+! App dir must contain either app.R or server.R.
+Run `rlang::last_error()` to see where the error occurred.
+> 
+> 
+```
+
 
 #
 <br>
