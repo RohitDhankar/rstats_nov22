@@ -1,5 +1,247 @@
 
 
+####  mmm_gitup
+
+
+#
+<br>
+
+
+##### Coding R within VS COde - Extensions Installed 
+
+```bash
+installing to /home/dhankar/R/x86_64-pc-linux-gnu-library/4.2/00LOCK-languageserver/00new/languageserver/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (languageserver)
+
+The downloaded source packages are in
+        ‘/tmp/RtmpzBZxII/downloaded_packages’
+```
+
+
+#
+<br>
+
+
+#### Init Shiny Code 
+
+
+#
+<br>
+
+- install.packages("shiny")
+
+```bash
+
+installing to /home/dhankar/R/x86_64-pc-linux-gnu-library/4.2/00LOCK-cli/00new/cli/libs
+installing to /home/dhankar/R/x86_64-pc-linux-gnu-library/4.2/00LOCK-httpuv/00new/httpuv/libs
+** R
+** demo
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (httpuv)
+* installing *source* package ‘shiny’ ...
+** package ‘shiny’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (shiny)
+
+The downloaded source packages are in
+	‘/tmp/RtmpA9dzBk/downloaded_packages’
+```
+#
+<br>
+
+#### Latest Installed Packages are within the -- 4.2 DIR 
+
+- /home/dhankar/R/x86_64-pc-linux-gnu-library/4.2/
+
+> The Older R Package DIR's are also on the system in previous Version DIR's 
+
+```bash
+(base) dhankar@dhankar-1:~/R/x86_64-pc-linux-gnu-library$ pwd
+/home/dhankar/R/x86_64-pc-linux-gnu-library
+(base) dhankar@dhankar-1:~/R/x86_64-pc-linux-gnu-library$ ls -lahtr
+total 20K
+drwxr-xr-x   3 dhankar dhankar 4.0K May 14  2020 ..
+drwxr-xr-x  87 dhankar dhankar 4.0K May 30  2020 3.4
+drwxrwxr-x 122 dhankar dhankar 4.0K Jul  5  2021 4.1
+drwxr-xr-x   5 dhankar dhankar 4.0K Nov 10 19:39 .
+drwxrwxr-x  43 dhankar dhankar 4.0K Nov 10 22:06 4.2
+#
+(base) dhankar@dhankar-1:~/R/x86_64-pc-linux-gnu-library$ cd 3.4/
+(base) dhankar@dhankar-1:~/.../3.4$ ls -lahtr
+total 348K
+drwxr-xr-x  9 dhankar dhankar 4.0K May 14  2020 ps
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 prettyunits
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 backports
+drwxr-xr-x  8 dhankar dhankar 4.0K May 14  2020 rstudioapi
+drwxr-xr-x  8 dhankar dhankar 4.0K May 14  2020 utf8
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 evaluate
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 praise
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 assertthat
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 pkgconfig
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 R6
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 BH
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 plogr
+drwxr-xr-x  8 dhankar dhankar 4.0K May 14  2020 stringi
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 farver
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 labeling
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 RColorBrewer
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 viridisLite
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 crayon
+drwxr-xr-x  8 dhankar dhankar 4.0K May 14  2020 fansi
+drwxr-xr-x 13 dhankar dhankar 4.0K May 14  2020 colorspace
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 fracdiff
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 magrittr
+drwxr-xr-x 16 dhankar dhankar 4.0K May 14  2020 Rcpp
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 timeDate
+drwxr-xr-x 11 dhankar dhankar 4.0K May 14  2020 urca
+drwxr-xr-x 10 dhankar dhankar 4.0K May 14  2020 zoo
+drwxr-xr-x 11 dhankar dhankar 4.0K May 14  2020 digest
+drwxr-xr-x  8 dhankar dhankar 4.0K May 14  2020 glue
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 gtable
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 rlang
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 withr
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 quadprog
+drwxr-xr-x  8 dhankar dhankar 4.0K May 14  2020 processx
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 rprojroot
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 ellipsis
+drwxr-xr-x  8 dhankar dhankar 4.0K May 14  2020 purrr
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 lifecycle
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 munsell
+drwxr-xr-x  9 dhankar dhankar 4.0K May 14  2020 cli
+drwxr-xr-x 13 dhankar dhankar 4.0K May 14  2020 xts
+drwxr-xr-x  9 dhankar dhankar 4.0K May 14  2020 lmtest
+drwxr-xr-x 13 dhankar dhankar 4.0K May 14  2020 RcppArmadillo
+drwxr-xr-x  8 dhankar dhankar 4.0K May 14  2020 gridExtra
+drwxr-xr-x  9 dhankar dhankar 4.0K May 14  2020 stringr
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 callr
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 desc
+drwxr-xr-x  9 dhankar dhankar 4.0K May 14  2020 vctrs
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 scales
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 pkgbuild
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 tidyselect
+drwxr-xr-x  6 dhankar dhankar 4.0K May 14  2020 pillar
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 pkgload
+drwxr-xr-x  8 dhankar dhankar 4.0K May 14  2020 tibble
+drwxr-xr-x 11 dhankar dhankar 4.0K May 14  2020 testthat
+drwxr-xr-x 10 dhankar dhankar 4.0K May 14  2020 dplyr
+drwxr-xr-x  9 dhankar dhankar 4.0K May 14  2020 tidyr
+drwxr-xr-x  9 dhankar dhankar 4.0K May 14  2020 isoband
+drwxr-xr-x  8 dhankar dhankar 4.0K May 14  2020 ggplot2
+drwxr-xr-x  7 dhankar dhankar 4.0K May 14  2020 ggfortify
+drwxr-xr-x  9 dhankar dhankar 4.0K May 22  2020 TTR
+drwxr-xr-x  7 dhankar dhankar 4.0K May 22  2020 quantmod
+drwxr-xr-x  8 dhankar dhankar 4.0K May 22  2020 tseries
+drwxr-xr-x  9 dhankar dhankar 4.0K May 22  2020 forecast
+drwxr-xr-x  8 dhankar dhankar 4.0K May 22  2020 xfun
+drwxr-xr-x  7 dhankar dhankar 4.0K May 22  2020 highr
+drwxr-xr-x  8 dhankar dhankar 4.0K May 22  2020 yaml
+drwxr-xr-x  7 dhankar dhankar 4.0K May 22  2020 htmltools
+drwxr-xr-x  8 dhankar dhankar 4.0K May 22  2020 jsonlite
+drwxr-xr-x  7 dhankar dhankar 4.0K May 22  2020 base64enc
+drwxr-xr-x  7 dhankar dhankar 4.0K May 22  2020 mime
+drwxr-xr-x  6 dhankar dhankar 4.0K May 22  2020 tinytex
+drwxr-xr-x 11 dhankar dhankar 4.0K May 22  2020 markdown
+drwxr-xr-x 14 dhankar dhankar 4.0K May 22  2020 knitr
+drwxr-xr-x 10 dhankar dhankar 4.0K May 22  2020 rmarkdown
+drwxr-xr-x  7 dhankar dhankar 4.0K May 22  2020 sys
+drwxr-xr-x  7 dhankar dhankar 4.0K May 22  2020 bitops
+drwxr-xr-x  7 dhankar dhankar 4.0K May 22  2020 askpass
+drwxr-xr-x  8 dhankar dhankar 4.0K May 22  2020 packrat
+drwxr-xr-x  6 dhankar dhankar 4.0K May 24  2020 hms
+drwxr-xr-x  8 dhankar dhankar 4.0K May 24  2020 clipr
+drwxr-xr-x 10 dhankar dhankar 4.0K May 24  2020 readr
+drwxr-xr-x  7 dhankar dhankar 4.0K May 29  2020 corrplot
+drwxr-xr-x 14 dhankar dhankar 4.0K May 30  2020 RCurl
+drwxr-xr-x  8 dhankar dhankar 4.0K May 30  2020 openssl
+drwxr-xr-x  9 dhankar dhankar 4.0K May 30  2020 rsconnect
+drwxr-xr-x 87 dhankar dhankar 4.0K May 30  2020 .
+drwxr-xr-x  5 dhankar dhankar 4.0K Nov 10 19:39 ..
+(base) dhankar@dhankar-1:~/.../3.4$ 
+
+```
+
+#
+<br>
+
+
+```bash
+$ cd /home/dhankar/R/x86_64-pc-linux-gnu-library/4.2/
+(base) dhankar@dhankar-1:~/.../4.2$ 
+(base) dhankar@dhankar-1:~/.../4.2$ ls -lahtr
+total 172K
+drwxr-xr-x  5 dhankar dhankar 4.0K Nov 10 19:39 ..
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 21:57 base64enc
+drwxrwxr-x 11 dhankar dhankar 4.0K Nov 10 21:57 digest
+drwxrwxr-x  6 dhankar dhankar 4.0K Nov 10 21:58 evaluate
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 21:58 glue
+drwxrwxr-x  9 dhankar dhankar 4.0K Nov 10 21:58 xfun
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 21:58 highr
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 21:58 rlang
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 21:58 fastmap
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 21:58 htmltools
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 21:58 jsonlite
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 21:58 magrittr
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 21:59 stringi
+drwxrwxr-x  9 dhankar dhankar 4.0K Nov 10 21:59 stringr
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 21:59 yaml
+drwxrwxr-x 14 dhankar dhankar 4.0K Nov 10 21:59 knitr
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 21:59 commonmark
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 21:59 mime
+drwxrwxr-x  9 dhankar dhankar 4.0K Nov 10 21:59 markdown
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 22:00 fs
+drwxrwxr-x  6 dhankar dhankar 4.0K Nov 10 22:00 R6
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 22:00 rappdirs
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 22:00 cachem
+drwxrwxr-x 13 dhankar dhankar 4.0K Nov 10 22:01 sass
+drwxrwxr-x  6 dhankar dhankar 4.0K Nov 10 22:01 memoise
+drwxrwxr-x 16 dhankar dhankar 4.0K Nov 10 22:01 bslib
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 22:01 jquerylib
+drwxrwxr-x  6 dhankar dhankar 4.0K Nov 10 22:01 tinytex
+drwxrwxr-x 10 dhankar dhankar 4.0K Nov 10 22:01 rmarkdown
+drwxrwxr-x 16 dhankar dhankar 4.0K Nov 10 22:04 Rcpp
+drwxrwxr-x 11 dhankar dhankar 4.0K Nov 10 22:04 cli
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 22:04 xtable
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 22:04 fontawesome
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 22:04 sourcetools
+drwxrwxr-x  6 dhankar dhankar 4.0K Nov 10 22:04 crayon
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 22:04 withr
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 22:04 ellipsis
+drwxrwxr-x  9 dhankar dhankar 4.0K Nov 10 22:04 later
+drwxrwxr-x  7 dhankar dhankar 4.0K Nov 10 22:04 lifecycle
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 22:04 promises
+drwxrwxr-x  8 dhankar dhankar 4.0K Nov 10 22:05 httpuv
+drwxrwxr-x 11 dhankar dhankar 4.0K Nov 10 22:06 shiny
+drwxrwxr-x 43 dhankar dhankar 4.0K Nov 10 22:06 .
+(base) dhankar@dhankar-1:~/.../4.2$ 
+
+```
 #
 <br>
 
