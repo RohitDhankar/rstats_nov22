@@ -1,4 +1,74 @@
 
+
+#
+<br>
+
+##### Installed  - RStudio and R on Personal - Ubuntu 18 
+
+- R version 4.2.2 (2022-10-31) -- "Innocent and Trusting"
+
+#
+<br>
+
+```bash
+(base) dhankar@dhankar-1:~/.../RStudio_Nov22$ ls
+git_up  init_INSTALL_SETUP_1.md  rstudio-2022.07.2-576-amd64.deb
+
+(base) dhankar@dhankar-1:~/.../RStudio_Nov22$ sudo dpkg -i rstudio-2022.07.2-576-amd64.deb 
+[sudo] password for dhankar: 
+(Reading database ... 973481 files and directories currently installed.)
+Preparing to unpack rstudio-2022.07.2-576-amd64.deb ...
+Unpacking rstudio (2022.07.2+576) over (1.2.5042) ...
+Setting up rstudio (2022.07.2+576) ...
+Processing triggers for gnome-menus (3.13.3-11ubuntu1.1) ...
+Processing triggers for desktop-file-utils (0.23-1ubuntu3.18.04.2) ...
+Processing triggers for mime-support (3.60ubuntu1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for shared-mime-info (1.9-2) ...
+
+```
+#
+<br>
+
+```bash
+(base) dhankar@dhankar-1:~/.../RStudio_Nov22$ R --version
+R version 4.2.2 (2022-10-31) -- "Innocent and Trusting"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under the terms of the
+GNU General Public License versions 2 or 3.
+For more information about these matters see
+https://www.gnu.org/licenses/.
+
+#
+#
+(base) dhankar@dhankar-1:~/.../RStudio_Nov22$ R
+
+R version 4.2.2 (2022-10-31) -- "Innocent and Trusting"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+>
+```
+
+
+
 #
 <br>
 
