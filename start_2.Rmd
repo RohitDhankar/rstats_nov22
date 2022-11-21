@@ -1,0 +1,80 @@
+---
+title: "start_2_R_basics"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+```
+In R, an object is anything that can be assigned to a variable. This includes constants,
+data structures, functions, and even graphs. Objects have a mode (which describes
+how the object is stored) and a class (which tells generic functions like print how
+to handle it).
+```
+#
+
+```
+Vectors are one-dimensional arrays that can hold numeric data, character data, or logi-
+cal data. The combine function c() is used to form the vector.
+```
+
+```{r}
+x <- c(1,2,4) #The “c" stands for “concatenate."
+x
+q <- c(x,x,8)
+q
+#
+a <- c(1, 2, 5, 3, 6, -2, 4)
+b <- c("one", "two", "three")
+c <- c(TRUE, TRUE, TRUE, FALSE, TRUE, FALSE)
+
+```
+
+#
+```
+Seen Above -- a is numeric vector, b is a character vector, and c is a logical vector. Note that the
+data in a vector must only be one type or mode (numeric, character, or logical). You
+can’t mix modes in the same vector.
+```
+#
+```
+Indexing vectors - 
+#
+a_idx_1_3 <- a[c(1:3)]
+```
+#
+```{r}
+a_idx_1_3 <- a[c(1:3)]
+a_idx_1_3
+print(a_idx_1_3)
+
+# x <- c(1,3,4) #The “c" stands for “concatenate."
+# x
+# q <- c(x,x,8)
+# q
+```
+
+```{r}
+x <- c(1,3,4) #The “c" stands for “concatenate."
+x
+q <- c(x,x,8)
+q
+```
+
+
+```{r}
+x <- c(1,7,4) #The “c" stands for “concatenate."
+x
+q <- c(x,x,8)
+q
+```
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it 
+(click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. 
+Consequently, unlike *Knit*, *Preview* does not run any R code chunks. 
+Instead, the output of the chunk when it was last run in the editor is displayed.
