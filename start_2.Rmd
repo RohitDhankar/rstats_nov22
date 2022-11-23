@@ -53,12 +53,90 @@ print(a_idx_1_3)
 # q <- c(x,x,8)
 # q
 ```
+#
+```
+A matrix is a two-dimensional array where each element has the same mode (numeric,
+character, or logical). Matrices are created with the matrix function
+#
+The option byrow indicates whether the matrix should be filled in
+by row ( byrow=TRUE ) or by column ( byrow=FALSE ). The default is by column.
+```
+#
+```
+myymatrix <- matrix(vector, nrow=number_of_rows, ncol=number_of_columns,
+byrow=logical_value, dimnames=list(
+char_vector_rownames, char_vector_colnames))
+```
+
+
 
 ```{r}
-x <- c(1,3,4) #The “c" stands for “concatenate."
-x
-q <- c(x,x,8)
-q
+matrx_y <- matrix(1:20, nrow=5, ncol=4)
+matrx_y
+```
+
+#### Read CSV 
+#
+
+```{r}
+library(readr)
+df_iris <- read_csv("~/temp/11_22/#Rstats/RStudio_Nov22/git_up/rstats_nov22/iris.csv")
+View(df_iris)
+```
+
+<!-- ── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────
+Delimiter: ","
+chr (1): Species
+dbl (4): Sepal.Length, Sepal.Width, Petal.Length, Petal.Width
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message. -->
+
+#### Get DF Cols 
+
+```{r}
+print(df_iris$Species)
+vector_species <- df_iris$Species
+print(class(vector_species))
+```
+
+#### Check Duplicates 
+
+
+```{r}
+print(class(vector_species))
+duplicated(vector_species)
+```
+
+
+
+
+
+
+
+
+
+
+```{r}
+# #https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/read.table
+# www <- "http://www.massey.ac.nz;-pscowper/ts/cbe.dat"
+# CBE <- read.table(www, header = T)
+```
+
+
+
+
+
+
+```{r}
+y <- matrix(1:20, nrow=5, ncol=4)
+```
+
+
+
+
+```{r}
+y <- matrix(1:20, nrow=5, ncol=4)
 ```
 
 

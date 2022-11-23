@@ -2,10 +2,8 @@ library(shiny)
 
 # Test SHINY APP -- Basic Demo -1 from the Inbuilt APPS 
 # Define UI for app that draws a histogram ----
-ui <- fluidPage(
-  
-  # App title ----
-  titlePanel("Shiny DEMO -1_Coded in VS Code"),
+ui <- fluidPage(# App title ----
+                titlePanel("Shiny DEMO -1_Coded in VS Code"),
   
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
