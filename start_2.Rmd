@@ -81,6 +81,7 @@ matrx_y
 ```{r}
 library(readr)
 df_iris <- read_csv("~/temp/11_22/#Rstats/RStudio_Nov22/git_up/rstats_nov22/iris.csv")
+df_iris_1 <- read_csv("~/temp/11_22/#Rstats/RStudio_Nov22/git_up/rstats_nov22/iris_1.csv") ## Dummy IRIS - for testing some simple code 
 View(df_iris)
 ```
 
@@ -109,13 +110,53 @@ duplicated(vector_species)
 ```
 
 
+#### Merge 2 Data Sets 
+#
+
+```{r}
+# df_merged_iris <- merge(df_iris,df_iris_1,by="Species",all.x=TRUE,all.y=TRUE)
+# #View(df_merged_iris)
+# print(nrow(df_merged_iris))## nrow 
+# print(ncol(df_merged_iris)) ## ncol
+
+```
+
+#
+
+
+```{r}
+#order_iris <- df_iris[order[df_iris$Species]]
+#Error in order[df_iris$Species] : 
+#object of type 'closure' is not subsettable
+
+order_iris <- df_iris[order(df_iris$Species),]
+order_iris_1 <- df_iris[order(df_iris$Species , df_iris$Sepal.Length),] 
+#Sepal.Length, 
+order_iris_2 <- df_iris[order(df_iris$Species , df_iris$Sepal.Width),]
+#Sepal.Width, 
+#
+print(class(order_iris)) #[1] "spec_tbl_df" "tbl_df"      "tbl"         "data.frame" 
+print(head(order_iris))
+print(tail(order_iris))
+
+#
+print(head(order_iris_1))
+print(tail(order_iris_1))
+
+#
+print(head(order_iris_2))
+print(tail(order_iris_2))
+
+# TODO - Petal.Length, Petal.Width
+# print(nrow(df_merged_iris))## nrow 
+# print(ncol(df_merged_iris)) ## ncol
+
+```
 
 
 
-
-
-
-
+#### Import CSV from WWW
+#
 
 ```{r}
 # #https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/read.table
