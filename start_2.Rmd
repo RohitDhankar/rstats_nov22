@@ -94,6 +94,7 @@ dbl (4): Sepal.Length, Sepal.Width, Petal.Length, Petal.Width
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message. -->
 
 #### Get DF Cols 
+#
 
 ```{r}
 print(df_iris$Species)
@@ -102,11 +103,18 @@ print(class(vector_species))
 ```
 
 #### Check Duplicates 
-
+#
 
 ```{r}
 print(class(vector_species))
 duplicated(vector_species)
+print(length(vector_species))#150 
+
+sum(duplicated(vector_species)) 
+# 147 - as the 1st Occurences are Not considered as DUPLICATES
+
+# print(nrow(vector_species))#NULL -- Its a VECTOR NOT a DF 
+# print(ncol(vector_species)) # NULL-- Its a VECTOR NOT a DF  
 ```
 
 
@@ -121,8 +129,8 @@ duplicated(vector_species)
 
 ```
 
+#### Order Data in a DATA FRAME 
 #
-
 
 ```{r}
 #order_iris <- df_iris[order[df_iris$Species]]
@@ -132,7 +140,8 @@ duplicated(vector_species)
 order_iris <- df_iris[order(df_iris$Species),]
 order_iris_1 <- df_iris[order(df_iris$Species , df_iris$Sepal.Length),] 
 #Sepal.Length, 
-order_iris_2 <- df_iris[order(df_iris$Species , df_iris$Sepal.Width),]
+order_iris_2_ascending <- df_iris[order(df_iris$Species , df_iris$Sepal.Width),]
+order_iris_2_decending <- df_iris[order(df_iris$Species , - df_iris$Sepal.Width),]
 #Sepal.Width, 
 #
 print(class(order_iris)) #[1] "spec_tbl_df" "tbl_df"      "tbl"         "data.frame" 
@@ -140,16 +149,91 @@ print(head(order_iris))
 print(tail(order_iris))
 
 #
-print(head(order_iris_1))
-print(tail(order_iris_1))
+print(head(order_iris_1)) ###Sepal.Length, 
+print(tail(order_iris_1)) ###Sepal.Length, 
 
 #
-print(head(order_iris_2))
-print(tail(order_iris_2))
+print(head(order_iris_2_decending)) ##Sepal.Width, 
+print(tail(order_iris_2_decending)) ##Sepal.Width, 
 
 # TODO - Petal.Length, Petal.Width
 # print(nrow(df_merged_iris))## nrow 
 # print(ncol(df_merged_iris)) ## ncol
+
+```
+
+#
+
+##### AS TIBBLE 
+
+- https://github.com/tidyverse/tibble/blob/HEAD/R/as_tibble.R
+- https://tibble.tidyverse.org/reference/as_tibble.html
+
+#
+
+# remotes::install_github("thinkr-open/golem")
+
+```{r}
+library(dplyr)
+tibble_order_iris_2_decending <- as_tibble(order_iris_2_decending)
+print(head(tibble_order_iris_2_decending))
+```
+
+
+```{r}
+library(dplyr)
+tibble_order_iris_2_decending <- as_tibble(order_iris_2_decending)
+print(head(tibble_order_iris_2_decending))
+```
+
+
+```{r}
+
+tibble_order_iris_2_ascending <- as_tibble(order_iris_2_ascending)
+print(head(tibble_order_iris_2_ascending))
+```
+
+
+##### Horizontal Join -- two data frames are joined by one or more common key variables (that is
+an inner join).
+#
+
+
+```{r}
+
+```
+
+
+
+
+
+```{r}
+
+```
+
+
+
+
+
+
+```{r}
+
+```
+
+
+
+
+
+
+```{r}
+
+```
+
+
+
+
+
+```{r}
 
 ```
 
@@ -170,22 +254,19 @@ print(tail(order_iris_2))
 
 
 ```{r}
-y <- matrix(1:20, nrow=5, ncol=4)
+
 ```
 
 
 
 
 ```{r}
-y <- matrix(1:20, nrow=5, ncol=4)
+
 ```
 
 
 ```{r}
-x <- c(1,7,4) #The “c" stands for “concatenate."
-x
-q <- c(x,x,8)
-q
+
 ```
 
 

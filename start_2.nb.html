@@ -1851,20 +1851,25 @@ dbl (4): Sepal.Length, Sepal.Width, Petal.Length, Petal.Width
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message. -->
 <div id="get-df-cols" class="section level4">
 <h4>Get DF Cols</h4>
+</div>
+</div>
+<div id="section-7" class="section level1">
+<h1></h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoY2xhc3ModmVjdG9yX3NwZWNpZXMpKVxuXG5gYGAifQ== -->
-<pre class="r"><code>print(class(vector_species))
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoZGZfaXJpcyRTcGVjaWVzKVxudmVjdG9yX3NwZWNpZXMgPC0gZGZfaXJpcyRTcGVjaWVzXG5wcmludChjbGFzcyh2ZWN0b3Jfc3BlY2llcykpXG5gYGAifQ== -->
+<pre class="r"><code>print(df_iris$Species)
+vector_species &lt;- df_iris$Species
+print(class(vector_species))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiY2hhcmFjdGVyXCJcbiJ9 -->
-<pre><code>[1] &quot;character&quot;</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-</div>
 <div id="check-duplicates" class="section level4">
 <h4>Check Duplicates</h4>
+</div>
+</div>
+<div id="section-8" class="section level1">
+<h1></h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoY2xhc3ModmVjdG9yX3NwZWNpZXMpKVxuZHVwbGljYXRlZCh2ZWN0b3Jfc3BlY2llcylcbmBgYCJ9 -->
@@ -1873,12 +1878,11 @@ duplicated(vector_species)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-</div>
 <div id="merge-2-data-sets" class="section level4">
 <h4>Merge 2 Data Sets</h4>
 </div>
 </div>
-<div id="section-7" class="section level1">
+<div id="section-9" class="section level1">
 <h1></h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
@@ -1891,26 +1895,97 @@ duplicated(vector_species)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<div id="order-data-in-a-data-frame" class="section level4">
+<h4>Order Data in a DATA FRAME</h4>
 </div>
-<div id="section-8" class="section level1">
+</div>
+<div id="section-10" class="section level1">
 <h1></h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxub3JkZXJfaXJpcyA8LSBkZl9pcmlzW29yZGVyW2RmX2lyaXMkU3BlY2llc11dXG5cbmBgYCJ9 -->
-<pre class="r"><code>order_iris &lt;- df_iris[order[df_iris$Species]]
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI29yZGVyX2lyaXMgPC0gZGZfaXJpc1tvcmRlcltkZl9pcmlzJFNwZWNpZXNdXVxuI0Vycm9yIGluIG9yZGVyW2RmX2lyaXMkU3BlY2llc10gOiBcbiNvYmplY3Qgb2YgdHlwZSAnY2xvc3VyZScgaXMgbm90IHN1YnNldHRhYmxlXG5cbm9yZGVyX2lyaXMgPC0gZGZfaXJpc1tvcmRlcihkZl9pcmlzJFNwZWNpZXMpLF1cbm9yZGVyX2lyaXNfMSA8LSBkZl9pcmlzW29yZGVyKGRmX2lyaXMkU3BlY2llcyAsIGRmX2lyaXMkU2VwYWwuTGVuZ3RoKSxdIFxuI1NlcGFsLkxlbmd0aCwgXG5vcmRlcl9pcmlzXzJfYXNjZW5kaW5nIDwtIGRmX2lyaXNbb3JkZXIoZGZfaXJpcyRTcGVjaWVzICwgZGZfaXJpcyRTZXBhbC5XaWR0aCksXVxub3JkZXJfaXJpc18yX2RlY2VuZGluZyA8LSBkZl9pcmlzW29yZGVyKGRmX2lyaXMkU3BlY2llcyAsIC0gZGZfaXJpcyRTZXBhbC5XaWR0aCksXVxuI1NlcGFsLldpZHRoLCBcbiNcbnByaW50KGNsYXNzKG9yZGVyX2lyaXMpKSAjWzFdIFwic3BlY190YmxfZGZcIiBcInRibF9kZlwiICAgICAgXCJ0YmxcIiAgICAgICAgIFwiZGF0YS5mcmFtZVwiIFxucHJpbnQoaGVhZChvcmRlcl9pcmlzKSlcbnByaW50KHRhaWwob3JkZXJfaXJpcykpXG5cbiNcbnByaW50KGhlYWQob3JkZXJfaXJpc18xKSkgIyMjU2VwYWwuTGVuZ3RoLCBcbnByaW50KHRhaWwob3JkZXJfaXJpc18xKSkgIyMjU2VwYWwuTGVuZ3RoLCBcblxuI1xucHJpbnQoaGVhZChvcmRlcl9pcmlzXzJfZGVjZW5kaW5nKSkgIyNTZXBhbC5XaWR0aCwgXG5wcmludCh0YWlsKG9yZGVyX2lyaXNfMl9kZWNlbmRpbmcpKSAjI1NlcGFsLldpZHRoLCBcblxuIyBUT0RPIC0gUGV0YWwuTGVuZ3RoLCBQZXRhbC5XaWR0aFxuIyBwcmludChucm93KGRmX21lcmdlZF9pcmlzKSkjIyBucm93IFxuIyBwcmludChuY29sKGRmX21lcmdlZF9pcmlzKSkgIyMgbmNvbFxuXG5gYGAifQ== -->
+<pre class="r"><code>#order_iris &lt;- df_iris[order[df_iris$Species]]
+#Error in order[df_iris$Species] : 
+#object of type &#39;closure&#39; is not subsettable
+
+order_iris &lt;- df_iris[order(df_iris$Species),]
+order_iris_1 &lt;- df_iris[order(df_iris$Species , df_iris$Sepal.Length),] 
+#Sepal.Length, 
+order_iris_2_ascending &lt;- df_iris[order(df_iris$Species , df_iris$Sepal.Width),]
+order_iris_2_decending &lt;- df_iris[order(df_iris$Species , - df_iris$Sepal.Width),]
+#Sepal.Width, 
+#
+print(class(order_iris)) #[1] &quot;spec_tbl_df&quot; &quot;tbl_df&quot;      &quot;tbl&quot;         &quot;data.frame&quot; 
+print(head(order_iris))
+print(tail(order_iris))
+
+#
+print(head(order_iris_1)) ###Sepal.Length, 
+print(tail(order_iris_1)) ###Sepal.Length, 
+
+#
+print(head(order_iris_2_decending)) ##Sepal.Width, 
+print(tail(order_iris_2_decending)) ##Sepal.Width, 
+
+# TODO - Petal.Length, Petal.Width
+# print(nrow(df_merged_iris))## nrow 
+# print(ncol(df_merged_iris)) ## ncol
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gb3JkZXJbZGZfaXJpcyRTcGVjaWVzXSA6IFxuICBvYmplY3Qgb2YgdHlwZSAnY2xvc3VyZScgaXMgbm90IHN1YnNldHRhYmxlXG4ifQ== -->
-<pre><code>Error in order[df_iris$Species] : 
-  object of type &#39;closure&#39; is not subsettable</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="section-11" class="section level1">
+<h1></h1>
+<div id="as-tibble" class="section level5">
+<h5>AS TIBBLE</h5>
+<ul>
+<li><a href="https://github.com/tidyverse/tibble/blob/HEAD/R/as_tibble.R" class="uri">https://github.com/tidyverse/tibble/blob/HEAD/R/as_tibble.R</a></li>
+<li><a href="https://tibble.tidyverse.org/reference/as_tibble.html" class="uri">https://tibble.tidyverse.org/reference/as_tibble.html</a></li>
+</ul>
+</div>
+</div>
+<div id="section-12" class="section level1">
+<h1></h1>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbnRpYmJsZV9vcmRlcl9pcmlzXzJfZGVjZW5kaW5nIDwtIGFzX3RpYmJsZShvcmRlcl9pcmlzXzJfZGVjZW5kaW5nKVxucHJpbnQoaGVhZCh0aWJibGVfb3JkZXJfaXJpc18yX2RlY2VuZGluZykpXG5gYGAifQ== -->
+<pre class="r"><code>library(dplyr)
+tibble_order_iris_2_decending &lt;- as_tibble(order_iris_2_decending)
+print(head(tibble_order_iris_2_decending))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div id="horizontal-join-two-data-frames-are-joined-by-one-or-more-common-key-variables-that-is" class="section level5">
+<h5>Horizontal Join – two data frames are joined by one or more common
+key variables (that is</h5>
+<p>an inner join). #</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
 <div id="import-csv-from-www" class="section level4">
 <h4>Import CSV from WWW</h4>
 </div>
 </div>
-<div id="section-9" class="section level1">
+<div id="section-13" class="section level1">
 <h1></h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
@@ -1923,26 +1998,14 @@ duplicated(vector_species)</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueSA8LSBtYXRyaXgoMToyMCwgbnJvdz01LCBuY29sPTQpXG5gYGAifQ== -->
-<pre class="r"><code>y &lt;- matrix(1:20, nrow=5, ncol=4)</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueSA8LSBtYXRyaXgoMToyMCwgbnJvdz01LCBuY29sPTQpXG5gYGAifQ== -->
-<pre class="r"><code>y &lt;- matrix(1:20, nrow=5, ncol=4)</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueCA8LSBjKDEsNyw0KSAjVGhlIOKAnGNcIiBzdGFuZHMgZm9yIOKAnGNvbmNhdGVuYXRlLlwiXG54XG5xIDwtIGMoeCx4LDgpXG5xXG5gYGAifQ== -->
-<pre class="r"><code>x &lt;- c(1,7,4) #The “c&quot; stands for “concatenate.&quot;
-x
-q &lt;- c(x,x,8)
-q</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the
@@ -1957,7 +2020,7 @@ run in the editor is displayed.</p>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAic3RhcnRfMl9SX2Jhc2ljcyIKb3V0cHV0OgogIHBkZl9kb2N1bWVudDogZGVmYXVsdAogIGh0bWxfbm90ZWJvb2s6IGRlZmF1bHQKLS0tCgpgYGAKSW4gUiwgYW4gb2JqZWN0IGlzIGFueXRoaW5nIHRoYXQgY2FuIGJlIGFzc2lnbmVkIHRvIGEgdmFyaWFibGUuIFRoaXMgaW5jbHVkZXMgY29uc3RhbnRzLApkYXRhIHN0cnVjdHVyZXMsIGZ1bmN0aW9ucywgYW5kIGV2ZW4gZ3JhcGhzLiBPYmplY3RzIGhhdmUgYSBtb2RlICh3aGljaCBkZXNjcmliZXMKaG93IHRoZSBvYmplY3QgaXMgc3RvcmVkKSBhbmQgYSBjbGFzcyAod2hpY2ggdGVsbHMgZ2VuZXJpYyBmdW5jdGlvbnMgbGlrZSBwcmludCBob3cKdG8gaGFuZGxlIGl0KS4KYGBgCiMKCmBgYApWZWN0b3JzIGFyZSBvbmUtZGltZW5zaW9uYWwgYXJyYXlzIHRoYXQgY2FuIGhvbGQgbnVtZXJpYyBkYXRhLCBjaGFyYWN0ZXIgZGF0YSwgb3IgbG9naS0KY2FsIGRhdGEuIFRoZSBjb21iaW5lIGZ1bmN0aW9uIGMoKSBpcyB1c2VkIHRvIGZvcm0gdGhlIHZlY3Rvci4KYGBgCgpgYGB7cn0KeCA8LSBjKDEsMiw0KSAjVGhlIOKAnGMiIHN0YW5kcyBmb3Ig4oCcY29uY2F0ZW5hdGUuIgp4CnEgPC0gYyh4LHgsOCkKcQojCmEgPC0gYygxLCAyLCA1LCAzLCA2LCAtMiwgNCkKYiA8LSBjKCJvbmUiLCAidHdvIiwgInRocmVlIikKYyA8LSBjKFRSVUUsIFRSVUUsIFRSVUUsIEZBTFNFLCBUUlVFLCBGQUxTRSkKCmBgYAoKIwpgYGAKU2VlbiBBYm92ZSAtLSBhIGlzIG51bWVyaWMgdmVjdG9yLCBiIGlzIGEgY2hhcmFjdGVyIHZlY3RvciwgYW5kIGMgaXMgYSBsb2dpY2FsIHZlY3Rvci4gTm90ZSB0aGF0IHRoZQpkYXRhIGluIGEgdmVjdG9yIG11c3Qgb25seSBiZSBvbmUgdHlwZSBvciBtb2RlIChudW1lcmljLCBjaGFyYWN0ZXIsIG9yIGxvZ2ljYWwpLiBZb3UKY2Fu4oCZdCBtaXggbW9kZXMgaW4gdGhlIHNhbWUgdmVjdG9yLgpgYGAKIwpgYGAKSW5kZXhpbmcgdmVjdG9ycyAtIAojCmFfaWR4XzFfMyA8LSBhW2MoMTozKV0KYGBgCiMKYGBge3J9CmFfaWR4XzFfMyA8LSBhW2MoMTozKV0KYV9pZHhfMV8zCnByaW50KGFfaWR4XzFfMykKCiMgeCA8LSBjKDEsMyw0KSAjVGhlIOKAnGMiIHN0YW5kcyBmb3Ig4oCcY29uY2F0ZW5hdGUuIgojIHgKIyBxIDwtIGMoeCx4LDgpCiMgcQpgYGAKIwpgYGAKQSBtYXRyaXggaXMgYSB0d28tZGltZW5zaW9uYWwgYXJyYXkgd2hlcmUgZWFjaCBlbGVtZW50IGhhcyB0aGUgc2FtZSBtb2RlIChudW1lcmljLApjaGFyYWN0ZXIsIG9yIGxvZ2ljYWwpLiBNYXRyaWNlcyBhcmUgY3JlYXRlZCB3aXRoIHRoZSBtYXRyaXggZnVuY3Rpb24KIwpUaGUgb3B0aW9uIGJ5cm93IGluZGljYXRlcyB3aGV0aGVyIHRoZSBtYXRyaXggc2hvdWxkIGJlIGZpbGxlZCBpbgpieSByb3cgKCBieXJvdz1UUlVFICkgb3IgYnkgY29sdW1uICggYnlyb3c9RkFMU0UgKS4gVGhlIGRlZmF1bHQgaXMgYnkgY29sdW1uLgpgYGAKIwpgYGAKbXl5bWF0cml4IDwtIG1hdHJpeCh2ZWN0b3IsIG5yb3c9bnVtYmVyX29mX3Jvd3MsIG5jb2w9bnVtYmVyX29mX2NvbHVtbnMsCmJ5cm93PWxvZ2ljYWxfdmFsdWUsIGRpbW5hbWVzPWxpc3QoCmNoYXJfdmVjdG9yX3Jvd25hbWVzLCBjaGFyX3ZlY3Rvcl9jb2xuYW1lcykpCmBgYAoKCgpgYGB7cn0KbWF0cnhfeSA8LSBtYXRyaXgoMToyMCwgbnJvdz01LCBuY29sPTQpCm1hdHJ4X3kKYGBgCgojIyMjIFJlYWQgQ1NWIAojCgpgYGB7cn0KbGlicmFyeShyZWFkcikKZGZfaXJpcyA8LSByZWFkX2Nzdigifi90ZW1wLzExXzIyLyNSc3RhdHMvUlN0dWRpb19Ob3YyMi9naXRfdXAvcnN0YXRzX25vdjIyL2lyaXMuY3N2IikKZGZfaXJpc18xIDwtIHJlYWRfY3N2KCJ+L3RlbXAvMTFfMjIvI1JzdGF0cy9SU3R1ZGlvX05vdjIyL2dpdF91cC9yc3RhdHNfbm92MjIvaXJpc18xLmNzdiIpICMjIER1bW15IElSSVMgLSBmb3IgdGVzdGluZyBzb21lIHNpbXBsZSBjb2RlIApWaWV3KGRmX2lyaXMpCmBgYAoKPCEtLSDilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACkRlbGltaXRlcjogIiwiCmNociAoMSk6IFNwZWNpZXMKZGJsICg0KTogU2VwYWwuTGVuZ3RoLCBTZXBhbC5XaWR0aCwgUGV0YWwuTGVuZ3RoLCBQZXRhbC5XaWR0aAoK4oS5IFVzZSBgc3BlYygpYCB0byByZXRyaWV2ZSB0aGUgZnVsbCBjb2x1bW4gc3BlY2lmaWNhdGlvbiBmb3IgdGhpcyBkYXRhLgrihLkgU3BlY2lmeSB0aGUgY29sdW1uIHR5cGVzIG9yIHNldCBgc2hvd19jb2xfdHlwZXMgPSBGQUxTRWAgdG8gcXVpZXQgdGhpcyBtZXNzYWdlLiAtLT4KCiMjIyMgR2V0IERGIENvbHMgCgpgYGB7cn0KcHJpbnQoZGZfaXJpcyRTcGVjaWVzKQp2ZWN0b3Jfc3BlY2llcyA8LSBkZl9pcmlzJFNwZWNpZXMKcHJpbnQoY2xhc3ModmVjdG9yX3NwZWNpZXMpKQpgYGAKCiMjIyMgQ2hlY2sgRHVwbGljYXRlcyAKCgpgYGB7cn0KcHJpbnQoY2xhc3ModmVjdG9yX3NwZWNpZXMpKQpkdXBsaWNhdGVkKHZlY3Rvcl9zcGVjaWVzKQpgYGAKCgojIyMjIE1lcmdlIDIgRGF0YSBTZXRzIAojCgpgYGB7cn0KIyBkZl9tZXJnZWRfaXJpcyA8LSBtZXJnZShkZl9pcmlzLGRmX2lyaXNfMSxieT0iU3BlY2llcyIsYWxsLng9VFJVRSxhbGwueT1UUlVFKQojICNWaWV3KGRmX21lcmdlZF9pcmlzKQojIHByaW50KG5yb3coZGZfbWVyZ2VkX2lyaXMpKSMjIG5yb3cgCiMgcHJpbnQobmNvbChkZl9tZXJnZWRfaXJpcykpICMjIG5jb2wKCmBgYAoKIwoKCmBgYHtyfQpvcmRlcl9pcmlzIDwtIGRmX2lyaXNbb3JkZXJbZGZfaXJpcyRTcGVjaWVzXV0KCiNWaWV3KGRmX21lcmdlZF9pcmlzKQpwcmludChucm93KGRmX21lcmdlZF9pcmlzKSkjIyBucm93IApwcmludChuY29sKGRmX21lcmdlZF9pcmlzKSkgIyMgbmNvbAoKYGBgCgoKCiMjIyMgSW1wb3J0IENTViBmcm9tIFdXVwojCgpgYGB7cn0KIyAjaHR0cHM6Ly93d3cucmRvY3VtZW50YXRpb24ub3JnL3BhY2thZ2VzL3V0aWxzL3ZlcnNpb25zLzMuNi4yL3RvcGljcy9yZWFkLnRhYmxlCiMgd3d3IDwtICJodHRwOi8vd3d3Lm1hc3NleS5hYy5uejstcHNjb3dwZXIvdHMvY2JlLmRhdCIKIyBDQkUgPC0gcmVhZC50YWJsZSh3d3csIGhlYWRlciA9IFQpCmBgYAoKCgoKCgpgYGB7cn0KeSA8LSBtYXRyaXgoMToyMCwgbnJvdz01LCBuY29sPTQpCmBgYAoKCgoKYGBge3J9CnkgPC0gbWF0cml4KDE6MjAsIG5yb3c9NSwgbmNvbD00KQpgYGAKCgpgYGB7cn0KeCA8LSBjKDEsNyw0KSAjVGhlIOKAnGMiIHN0YW5kcyBmb3Ig4oCcY29uY2F0ZW5hdGUuIgp4CnEgPC0gYyh4LHgsOCkKcQpgYGAKCgpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouCgpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAKKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuCgpUaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIApDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIApJbnN0ZWFkLCB0aGUgb3V0cHV0IG9mIHRoZSBjaHVuayB3aGVuIGl0IHdhcyBsYXN0IHJ1biBpbiB0aGUgZWRpdG9yIGlzIGRpc3BsYXllZC4K</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAic3RhcnRfMl9SX2Jhc2ljcyIKb3V0cHV0OgogIHBkZl9kb2N1bWVudDogZGVmYXVsdAogIGh0bWxfbm90ZWJvb2s6IGRlZmF1bHQKLS0tCgpgYGAKSW4gUiwgYW4gb2JqZWN0IGlzIGFueXRoaW5nIHRoYXQgY2FuIGJlIGFzc2lnbmVkIHRvIGEgdmFyaWFibGUuIFRoaXMgaW5jbHVkZXMgY29uc3RhbnRzLApkYXRhIHN0cnVjdHVyZXMsIGZ1bmN0aW9ucywgYW5kIGV2ZW4gZ3JhcGhzLiBPYmplY3RzIGhhdmUgYSBtb2RlICh3aGljaCBkZXNjcmliZXMKaG93IHRoZSBvYmplY3QgaXMgc3RvcmVkKSBhbmQgYSBjbGFzcyAod2hpY2ggdGVsbHMgZ2VuZXJpYyBmdW5jdGlvbnMgbGlrZSBwcmludCBob3cKdG8gaGFuZGxlIGl0KS4KYGBgCiMKCmBgYApWZWN0b3JzIGFyZSBvbmUtZGltZW5zaW9uYWwgYXJyYXlzIHRoYXQgY2FuIGhvbGQgbnVtZXJpYyBkYXRhLCBjaGFyYWN0ZXIgZGF0YSwgb3IgbG9naS0KY2FsIGRhdGEuIFRoZSBjb21iaW5lIGZ1bmN0aW9uIGMoKSBpcyB1c2VkIHRvIGZvcm0gdGhlIHZlY3Rvci4KYGBgCgpgYGB7cn0KeCA8LSBjKDEsMiw0KSAjVGhlIOKAnGMiIHN0YW5kcyBmb3Ig4oCcY29uY2F0ZW5hdGUuIgp4CnEgPC0gYyh4LHgsOCkKcQojCmEgPC0gYygxLCAyLCA1LCAzLCA2LCAtMiwgNCkKYiA8LSBjKCJvbmUiLCAidHdvIiwgInRocmVlIikKYyA8LSBjKFRSVUUsIFRSVUUsIFRSVUUsIEZBTFNFLCBUUlVFLCBGQUxTRSkKCmBgYAoKIwpgYGAKU2VlbiBBYm92ZSAtLSBhIGlzIG51bWVyaWMgdmVjdG9yLCBiIGlzIGEgY2hhcmFjdGVyIHZlY3RvciwgYW5kIGMgaXMgYSBsb2dpY2FsIHZlY3Rvci4gTm90ZSB0aGF0IHRoZQpkYXRhIGluIGEgdmVjdG9yIG11c3Qgb25seSBiZSBvbmUgdHlwZSBvciBtb2RlIChudW1lcmljLCBjaGFyYWN0ZXIsIG9yIGxvZ2ljYWwpLiBZb3UKY2Fu4oCZdCBtaXggbW9kZXMgaW4gdGhlIHNhbWUgdmVjdG9yLgpgYGAKIwpgYGAKSW5kZXhpbmcgdmVjdG9ycyAtIAojCmFfaWR4XzFfMyA8LSBhW2MoMTozKV0KYGBgCiMKYGBge3J9CmFfaWR4XzFfMyA8LSBhW2MoMTozKV0KYV9pZHhfMV8zCnByaW50KGFfaWR4XzFfMykKCiMgeCA8LSBjKDEsMyw0KSAjVGhlIOKAnGMiIHN0YW5kcyBmb3Ig4oCcY29uY2F0ZW5hdGUuIgojIHgKIyBxIDwtIGMoeCx4LDgpCiMgcQpgYGAKIwpgYGAKQSBtYXRyaXggaXMgYSB0d28tZGltZW5zaW9uYWwgYXJyYXkgd2hlcmUgZWFjaCBlbGVtZW50IGhhcyB0aGUgc2FtZSBtb2RlIChudW1lcmljLApjaGFyYWN0ZXIsIG9yIGxvZ2ljYWwpLiBNYXRyaWNlcyBhcmUgY3JlYXRlZCB3aXRoIHRoZSBtYXRyaXggZnVuY3Rpb24KIwpUaGUgb3B0aW9uIGJ5cm93IGluZGljYXRlcyB3aGV0aGVyIHRoZSBtYXRyaXggc2hvdWxkIGJlIGZpbGxlZCBpbgpieSByb3cgKCBieXJvdz1UUlVFICkgb3IgYnkgY29sdW1uICggYnlyb3c9RkFMU0UgKS4gVGhlIGRlZmF1bHQgaXMgYnkgY29sdW1uLgpgYGAKIwpgYGAKbXl5bWF0cml4IDwtIG1hdHJpeCh2ZWN0b3IsIG5yb3c9bnVtYmVyX29mX3Jvd3MsIG5jb2w9bnVtYmVyX29mX2NvbHVtbnMsCmJ5cm93PWxvZ2ljYWxfdmFsdWUsIGRpbW5hbWVzPWxpc3QoCmNoYXJfdmVjdG9yX3Jvd25hbWVzLCBjaGFyX3ZlY3Rvcl9jb2xuYW1lcykpCmBgYAoKCgpgYGB7cn0KbWF0cnhfeSA8LSBtYXRyaXgoMToyMCwgbnJvdz01LCBuY29sPTQpCm1hdHJ4X3kKYGBgCgojIyMjIFJlYWQgQ1NWIAojCgpgYGB7cn0KbGlicmFyeShyZWFkcikKZGZfaXJpcyA8LSByZWFkX2Nzdigifi90ZW1wLzExXzIyLyNSc3RhdHMvUlN0dWRpb19Ob3YyMi9naXRfdXAvcnN0YXRzX25vdjIyL2lyaXMuY3N2IikKZGZfaXJpc18xIDwtIHJlYWRfY3N2KCJ+L3RlbXAvMTFfMjIvI1JzdGF0cy9SU3R1ZGlvX05vdjIyL2dpdF91cC9yc3RhdHNfbm92MjIvaXJpc18xLmNzdiIpICMjIER1bW15IElSSVMgLSBmb3IgdGVzdGluZyBzb21lIHNpbXBsZSBjb2RlIApWaWV3KGRmX2lyaXMpCmBgYAoKPCEtLSDilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACkRlbGltaXRlcjogIiwiCmNociAoMSk6IFNwZWNpZXMKZGJsICg0KTogU2VwYWwuTGVuZ3RoLCBTZXBhbC5XaWR0aCwgUGV0YWwuTGVuZ3RoLCBQZXRhbC5XaWR0aAoK4oS5IFVzZSBgc3BlYygpYCB0byByZXRyaWV2ZSB0aGUgZnVsbCBjb2x1bW4gc3BlY2lmaWNhdGlvbiBmb3IgdGhpcyBkYXRhLgrihLkgU3BlY2lmeSB0aGUgY29sdW1uIHR5cGVzIG9yIHNldCBgc2hvd19jb2xfdHlwZXMgPSBGQUxTRWAgdG8gcXVpZXQgdGhpcyBtZXNzYWdlLiAtLT4KCiMjIyMgR2V0IERGIENvbHMgCiMKCmBgYHtyfQpwcmludChkZl9pcmlzJFNwZWNpZXMpCnZlY3Rvcl9zcGVjaWVzIDwtIGRmX2lyaXMkU3BlY2llcwpwcmludChjbGFzcyh2ZWN0b3Jfc3BlY2llcykpCmBgYAoKIyMjIyBDaGVjayBEdXBsaWNhdGVzIAojCgpgYGB7cn0KcHJpbnQoY2xhc3ModmVjdG9yX3NwZWNpZXMpKQpkdXBsaWNhdGVkKHZlY3Rvcl9zcGVjaWVzKQpgYGAKCgojIyMjIE1lcmdlIDIgRGF0YSBTZXRzIAojCgpgYGB7cn0KIyBkZl9tZXJnZWRfaXJpcyA8LSBtZXJnZShkZl9pcmlzLGRmX2lyaXNfMSxieT0iU3BlY2llcyIsYWxsLng9VFJVRSxhbGwueT1UUlVFKQojICNWaWV3KGRmX21lcmdlZF9pcmlzKQojIHByaW50KG5yb3coZGZfbWVyZ2VkX2lyaXMpKSMjIG5yb3cgCiMgcHJpbnQobmNvbChkZl9tZXJnZWRfaXJpcykpICMjIG5jb2wKCmBgYAoKIyMjIyBPcmRlciBEYXRhIGluIGEgREFUQSBGUkFNRSAKIwoKYGBge3J9CiNvcmRlcl9pcmlzIDwtIGRmX2lyaXNbb3JkZXJbZGZfaXJpcyRTcGVjaWVzXV0KI0Vycm9yIGluIG9yZGVyW2RmX2lyaXMkU3BlY2llc10gOiAKI29iamVjdCBvZiB0eXBlICdjbG9zdXJlJyBpcyBub3Qgc3Vic2V0dGFibGUKCm9yZGVyX2lyaXMgPC0gZGZfaXJpc1tvcmRlcihkZl9pcmlzJFNwZWNpZXMpLF0Kb3JkZXJfaXJpc18xIDwtIGRmX2lyaXNbb3JkZXIoZGZfaXJpcyRTcGVjaWVzICwgZGZfaXJpcyRTZXBhbC5MZW5ndGgpLF0gCiNTZXBhbC5MZW5ndGgsIApvcmRlcl9pcmlzXzJfYXNjZW5kaW5nIDwtIGRmX2lyaXNbb3JkZXIoZGZfaXJpcyRTcGVjaWVzICwgZGZfaXJpcyRTZXBhbC5XaWR0aCksXQpvcmRlcl9pcmlzXzJfZGVjZW5kaW5nIDwtIGRmX2lyaXNbb3JkZXIoZGZfaXJpcyRTcGVjaWVzICwgLSBkZl9pcmlzJFNlcGFsLldpZHRoKSxdCiNTZXBhbC5XaWR0aCwgCiMKcHJpbnQoY2xhc3Mob3JkZXJfaXJpcykpICNbMV0gInNwZWNfdGJsX2RmIiAidGJsX2RmIiAgICAgICJ0YmwiICAgICAgICAgImRhdGEuZnJhbWUiIApwcmludChoZWFkKG9yZGVyX2lyaXMpKQpwcmludCh0YWlsKG9yZGVyX2lyaXMpKQoKIwpwcmludChoZWFkKG9yZGVyX2lyaXNfMSkpICMjI1NlcGFsLkxlbmd0aCwgCnByaW50KHRhaWwob3JkZXJfaXJpc18xKSkgIyMjU2VwYWwuTGVuZ3RoLCAKCiMKcHJpbnQoaGVhZChvcmRlcl9pcmlzXzJfZGVjZW5kaW5nKSkgIyNTZXBhbC5XaWR0aCwgCnByaW50KHRhaWwob3JkZXJfaXJpc18yX2RlY2VuZGluZykpICMjU2VwYWwuV2lkdGgsIAoKIyBUT0RPIC0gUGV0YWwuTGVuZ3RoLCBQZXRhbC5XaWR0aAojIHByaW50KG5yb3coZGZfbWVyZ2VkX2lyaXMpKSMjIG5yb3cgCiMgcHJpbnQobmNvbChkZl9tZXJnZWRfaXJpcykpICMjIG5jb2wKCmBgYAoKIwoKIyMjIyMgQVMgVElCQkxFIAoKLSBodHRwczovL2dpdGh1Yi5jb20vdGlkeXZlcnNlL3RpYmJsZS9ibG9iL0hFQUQvUi9hc190aWJibGUuUgotIGh0dHBzOi8vdGliYmxlLnRpZHl2ZXJzZS5vcmcvcmVmZXJlbmNlL2FzX3RpYmJsZS5odG1sCgojCgpgYGB7cn0KbGlicmFyeShkcGx5cikKdGliYmxlX29yZGVyX2lyaXNfMl9kZWNlbmRpbmcgPC0gYXNfdGliYmxlKG9yZGVyX2lyaXNfMl9kZWNlbmRpbmcpCnByaW50KGhlYWQodGliYmxlX29yZGVyX2lyaXNfMl9kZWNlbmRpbmcpKQpgYGAKCgojIyMjIyBIb3Jpem9udGFsIEpvaW4gLS0gdHdvIGRhdGEgZnJhbWVzIGFyZSBqb2luZWQgYnkgb25lIG9yIG1vcmUgY29tbW9uIGtleSB2YXJpYWJsZXMgKHRoYXQgaXMKYW4gaW5uZXIgam9pbikuCiMKCgpgYGB7cn0KCmBgYAoKCgoKCmBgYHtyfQoKYGBgCgoKCgoKCmBgYHtyfQoKYGBgCgoKCgoKCmBgYHtyfQoKYGBgCgoKCgoKYGBge3J9CgpgYGAKCgoKIyMjIyBJbXBvcnQgQ1NWIGZyb20gV1dXCiMKCmBgYHtyfQojICNodHRwczovL3d3dy5yZG9jdW1lbnRhdGlvbi5vcmcvcGFja2FnZXMvdXRpbHMvdmVyc2lvbnMvMy42LjIvdG9waWNzL3JlYWQudGFibGUKIyB3d3cgPC0gImh0dHA6Ly93d3cubWFzc2V5LmFjLm56Oy1wc2Nvd3Blci90cy9jYmUuZGF0IgojIENCRSA8LSByZWFkLnRhYmxlKHd3dywgaGVhZGVyID0gVCkKYGBgCgoKCgoKCmBgYHtyfQoKYGBgCgoKCgpgYGB7cn0KCmBgYAoKCmBgYHtyfQoKYGBgCgoKQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLgoKV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgCihjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLgoKVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiAKQ29uc2VxdWVudGx5LCB1bmxpa2UgKktuaXQqLCAqUHJldmlldyogZG9lcyBub3QgcnVuIGFueSBSIGNvZGUgY2h1bmtzLiAKSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuCg==</div>
 
 
 
